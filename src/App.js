@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
+import PersonalInfo from './features/PersonalInfo';
+import { selectMode } from './features/PersonalInfo/themeSwitchSlice';
+import { GlobalStyle } from './general/GlobalStyle';
+import { themeDark, themeLight } from './general/theme';
 
 function App() {
+  const darkModeOff = useSelector(selectMode);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme = { darkModeOff ? themeLight : themeDark}>
+      <GlobalStyle />
+      <PersonalInfo />
+    </ThemeProvider>
   );
 }
 
