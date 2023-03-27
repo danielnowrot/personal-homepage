@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    max-width: 1216px;
+    max-width: 1225px;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 115px;
     display: flex;
     gap: 66px;
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px) {
@@ -38,6 +38,8 @@ export const PreTitle = styled.div`
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 12px;
+    max-height: 16px;
+
 `;
 
 export const Content = styled.div`
@@ -54,6 +56,7 @@ export const Content = styled.div`
 export const Title = styled.h1`
     font-weight: 900;
     font-size: 38px;
+    height: 46px;
     margin-top: 0;
     margin-bottom: 35px;
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px) {
