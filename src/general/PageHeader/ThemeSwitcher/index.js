@@ -14,7 +14,9 @@ export const ThemeSwitcher = () => {
                 DARK MODE {darkModeOff ? "ON" : "OFF"}
             </ButtonText>
             <IconContainer>
-                <ThemeIconBackground darkModeOff={!darkModeOff}><Sun /></ThemeIconBackground>
+                <ThemeIconBackground darkModeOff={!darkModeOff}>
+                    <Sun />
+                </ThemeIconBackground>
             </IconContainer>
         </ThemeButton>
     );
