@@ -15,6 +15,8 @@ export const ThemeButton = styled.button`
 `;
 
 export const ButtonText = styled.p`
+   font-size: 12px;
+   font-weight: 700;
    color: ${({ theme }) => theme.color.textSecondary};
    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px) {
       display: none;
@@ -23,8 +25,8 @@ export const ButtonText = styled.p`
 
 export const IconContainer = styled.div`
    margin-left: 12.47px;
-   width: 48px;
-   height: 26px;
+   width: 47px;
+   height: 25px;
    background-color: ${({ theme }) => theme.color.switchBackground} ;
    border: 1px solid ${({ theme }) => theme.color.textSecondary};
    border-radius: 30px;
