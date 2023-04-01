@@ -1,5 +1,5 @@
 import { PortfolioIcon, Subtitle, Title, Wrapper } from "./styled";
-import portfolioIcon from "./Shape.svg";
+import { ReactComponent as Icon } from "./Shape.svg";
 import { Content } from "./Content";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRepositories, selectRepositories, selectRepositoriesStatus } from "./portfolioSlice";
@@ -16,7 +16,9 @@ const Portfolio = () => {
 
     return (
         <Wrapper>
-            <PortfolioIcon src={portfolioIcon} alt=" " />
+            <PortfolioIcon >
+                <Icon />
+            </PortfolioIcon>
             <Title>Portfolio</Title>
             <Subtitle>My recent projects</Subtitle>
             <Content

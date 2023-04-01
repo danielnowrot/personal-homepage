@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const PortfolioIcon = styled.img`
+export const PortfolioIcon = styled.div`
     margin-top: 69px;
+    color: ${({ theme }) => theme.color.button};
 `;
 
 export const Wrapper = styled.div`
