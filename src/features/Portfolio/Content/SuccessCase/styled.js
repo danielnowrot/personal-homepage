@@ -10,6 +10,9 @@ export const List = styled.li`
     column-gap: 32px;
     list-style: none;
     padding: 0;
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px) {
+        grid-template-columns: 1fr;
+    };
 `;
 
 export const Tile = styled.li`
@@ -42,7 +45,7 @@ export const Title = styled.h3`
     margin: 0;
     font-weight: 700;
     font-size: 24px;
-    color: ${({ theme }) => theme.color.button};
+    color: ${({ theme }) => theme.color.textThird};
 `;
 
 export const Description = styled.p`
