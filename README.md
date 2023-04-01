@@ -10,6 +10,8 @@ Feel free to take a look 👇
 
 https://danielnowrot.github.io/personal-homepage/
 
+![](https://github.com/danielnowrot/personal-homepage/blob/743622f2f18b9a2321091d1fa498d63ceead0630/src/demo.png)
+
 ## Technologies:
 - HTML
 - CSS
