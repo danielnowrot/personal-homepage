@@ -5,15 +5,17 @@ import Portfolio from "./features/Portfolio";
 import { selectMode } from './features/PersonalInfo/themeSwitchSlice';
 import { GlobalStyle } from './general/GlobalStyle';
 import { themeDark, themeLight } from './general/theme';
+import PageFooter from './general/PageFooter';
 
 function App() {
   const darkModeOff = useSelector(selectMode);
 
   return (
-    <ThemeProvider theme = { darkModeOff ? themeLight : themeDark}>
+    <ThemeProvider theme={darkModeOff ? themeLight : themeDark}>
       <GlobalStyle />
       <PersonalInfo />
       <Portfolio />
+      <PageFooter />
     </ThemeProvider>
   );
 }
